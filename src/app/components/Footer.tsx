@@ -50,7 +50,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              L'unique destination pour les passionnés d'automobiles de luxe en quête d'extraordinaire.
+              L&apos;unique destination pour les passionnés d&apos;automobiles de luxe en quête d&apos;extraordinaire.
             </p>
             <div className="flex space-x-4 mt-6">
               {[Facebook, Instagram, Twitter, Youtube].map((Icon, index) => (

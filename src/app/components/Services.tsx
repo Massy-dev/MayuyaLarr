@@ -59,7 +59,7 @@ const VehicleShowcase = () => {
             Nos Modèles 
           </h1>
           <p className="text-gray-300 max-w-2xl mx-auto font-sans text-sm md:text-base leading-relaxed">
-          Découvrez notre collection des automobiles les plus prestigieuses, chacune étant un chef-d'œuvre d'ingénierie et de design. Conçue pour ceux qui exigent l'excellence.
+          Découvrez notre collection des automobiles les plus prestigieuses, chacune étant un chef-d&apos;œuvre d&apos;ingénierie et de design. Conçue pour ceux qui exigent l&apos;excellence.
           </p>
         </div>
 

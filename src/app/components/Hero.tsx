@@ -38,14 +38,14 @@ function Hero() {
           )}>
             <span className="block mb-2 text-[#D4AF37]">LA PUISSANCE</span>
             <span className="block mb-2 text-[#D4AF37]">DU LUXE.</span>
-            <span className="block font-light mt-4">L'ESPRIT MAYUYA.</span>
+            <span className="block font-light mt-4">L&apos;ESPRIT MAYUYA.</span>
           </h1>
           
           <p className={cn(
             "mt-6 font-sans text-gray-300 text-lg max-w-md opacity-0 transition-all duration-1000 delay-300",
             isVisible && "opacity-100 translate-y-0"
           )}>
-            Découvrez l'excellence automobile réinventée pour une nouvelle ère de sophistication et de performance.
+            Découvrez l&apos;excellence automobile réinventée pour une nouvelle ère de sophistication et de performance.
           </p>
           
           <div className={cn(
