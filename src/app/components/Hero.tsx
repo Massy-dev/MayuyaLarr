@@ -23,7 +23,7 @@ function Hero() {
           className="absolute inset-0 bg-[#1b2420]/90 z-10"
           style={{ mixBlendMode: "multiply" }}
         ></div>
-        <img
+        <Image
           src="https://images.pexels.com/photos/3786091/pexels-photo-3786091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt="Luxury Mayuya vehicle"
           className="w-full h-full object-cover object-center"
