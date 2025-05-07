@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { motion } from "framer-motion";
 import { ChevronRight, Info, Sparkles } from 'lucide-react';
 
@@ -30,7 +31,7 @@ const VehicleCard = ({ vehicle }: VehicleCardProps) => {
     >
       <div className="relative h-56 md:h-64 lg:h-72 overflow-hidden">
         <div className="absolute inset-0 bg-black/20 z-10"></div>
-        <img 
+        <Image 
           src={vehicle.imageUrl} 
           alt={vehicle.name} 
           className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
