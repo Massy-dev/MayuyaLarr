@@ -1,6 +1,6 @@
 import React from 'react';
 import { Crown, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
-
+import Image from 'next/image';
 
 
 
@@ -41,15 +41,15 @@ const Footer = () => {
   return (
     <footer className="bg-black border-t border-gray-800 pt-12 pb-8 px-4 md:px-8">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3  lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center mb-4">
-              <Crown className="h-6 w-6 text-amber-400 mr-2" />
-              <span className="text-lg font-serif font-bold text-white tracking-wider">
+             
+              <span className="text-lg font-serif  text-white tracking-wider">
                 MAYUYA <span className="text-amber-400"> LARR MONEY</span>
               </span>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
+            <p className="text-gray-400 font-sans text-sm leading-relaxed">
               L&apos;unique destination pour les passionnés d&apos;automobiles de luxe en quête d&apos;extraordinaire.
             </p>
             <div className="flex space-x-4 mt-6">
@@ -66,8 +66,8 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-white font-medium mb-4">Lien rapide</h4>
-            <ul className="space-y-2">
+            <h4 className="text-white font-serif font-semibold  mb-4">Lien rapide</h4>
+            <ul className="font-sans space-y-2">
               {Menus.map((item,indice) => (
                 <li key={indice}>
                   <a 
@@ -83,8 +83,8 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-white font-medium mb-4">Vehicles</h4>
-            <ul className="space-y-2">
+            <h4 className="text-white font-serif font-semibold mb-4">Vehicles</h4>
+            <ul className="space-y-2 font-sans">
               {['Luxury Sedans', 'Sports Cars', 'SUVs', 'Convertibles', 'Limited Editions'].map((item) => (
                 <li key={item}>
                   <a 
@@ -99,12 +99,12 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-white font-medium mb-4">Contact</h4>
-            <address className="not-italic text-sm text-gray-400 space-y-2">
+            <h4 className="text-white font-serif font-medium mb-4">Contact</h4>
+            <address className="font-sans not-italic text-sm text-gray-400 space-y-2">
               <p>123 Luxury Avenue</p>
               <p>Monaco, MC 98000</p>
-              <p className="text-amber-400 mt-4">+377 123 456 789</p>
-              <p className="text-amber-400">contact@prestigemotors.com</p>
+              <p className="text-luxeGold mt-4">+377 123 456 789</p>
+              <p className="text-luxeGold">contact@prestigemotors.com</p>
             </address>
           </div>
         </div>

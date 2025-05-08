@@ -26,7 +26,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Form */}
         <div>
-          <h2 className="text-3xl font-bold text-[#fec544] mb-6">Prendre rendez-vous</h2>
+          <h2 className="text-4xl font-serif text-luxeGold mb-6">Prendre rendez-vous</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               type="text"
@@ -73,7 +73,7 @@ export default function Contact() {
             />
             <button
               type="submit"
-              className="w-full bg-[#fec544] text-black font-semibold py-3 rounded hover:bg-yellow-400 transition"
+              className="w-full bg-luxeGold text-black font-semibold py-3 rounded hover:bg-white transition"
             >
               Envoyer
             </button>

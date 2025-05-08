@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import { Cinzel, Inter } from 'next/font/google'
+import { Cinzel, Inter  } from 'next/font/google'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -13,7 +13,7 @@ const config: Config = {
       colors: {
         luxeGreen: '#0e2014',
         luxeGreens:'#0e1f17',
-        luxeGold:  '#D4AF37',
+        luxeGold:  '#FFD700',
         deepBlack: '#0a0a0a',
         luxeWhite: '#f5f5f5',
       },
@@ -23,6 +23,7 @@ const config: Config = {
         Cinzel: ['Cinzel', 'serif'],
         lato: ['Lato', 'sans-serif'],
         Inter: ['Inter', 'sans-serif'],
+        
       },
     },
   },

@@ -32,8 +32,8 @@ export default function Testimonial() {
       id="testimonials"
     >
       <div className="absolute inset-0 bg-black/70 z-0"></div>
-      <div className="relative z-10 max-w-5xl mx-auto text-white px-4 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12">Témoignages Clients</h2>
+      <div className="relative z-10 max-w-5xl mx-auto text-luxeWhite px-4 text-center">
+        <h2 className="text-4xl sm:text-4xl font-serif mb-12">Témoignages Clients</h2>
 
         <Swiper
           slidesPerView={1}
@@ -47,7 +47,7 @@ export default function Testimonial() {
             <SwiperSlide key={idx}>
               <div className="bg-white/10 backdrop-blur-md rounded-lg px-6 py-8">
                 <p className="text-lg italic mb-4">“{item.text}”</p>
-                <h4 className="font-semibold text-[#fec544]">{item.name}</h4>
+                <h4 className="font-semibold text-luxeGold">{item.name}</h4>
               </div>
             </SwiperSlide>
           ))}

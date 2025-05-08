@@ -27,7 +27,7 @@ export default function Gallery() {
   return (
     <section id="galerie" className="bg-black py-20 px-6 lg:px-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">Galerie</h2>
+        <h2 className="text-4xl font-serif text-center text-luxeGold mb-12">Galerie</h2>
         <Slider {...settings}>
           {galleryImages.map((src, index) => (
             <motion.div

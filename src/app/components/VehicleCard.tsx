@@ -40,7 +40,7 @@ const VehicleCard = ({ vehicle }: VehicleCardProps) => {
         />
         
         <div className="absolute top-3 right-3 z-20">
-          <div className="bg-[#D4AF37] text-black px-3 py-1 text-xs font-bold rounded-sm flex items-center">
+          <div className="bg-luxeGold text-black px-3 py-1 text-xs font-bold rounded-sm flex items-center">
             <Sparkles className="h-3 w-3 mr-1" />
             Premium
           </div>
@@ -48,15 +48,15 @@ const VehicleCard = ({ vehicle }: VehicleCardProps) => {
       </div>
       
       <div className="p-6">
-        <h3 className="text-lg md:text-xl font-Inter font-medium text-white mb-1">
+        <h3 className="text-lg md:text-xl font-Inter font-medium text-luxeWhite mb-1">
           {vehicle.name}
         </h3>
-        <p className="text-[#D4AF37] text-sm font-light font-Inter mb-3">{vehicle.tagline}</p>
+        <p className="text-luxeGold text-sm font-light font-Inter mb-3">{vehicle.tagline}</p>
         <p className="text-gray-300 text-sm line-clamp-2 font-sans">{vehicle.description}</p>
         
         <div className={`overflow-hidden transition-all duration-500 ${showDetails ? 'max-h-96 mt-4' : 'max-h-0'}`}>
           <div className="border-t border-gray-700 pt-4 mt-1">
-            <h4 className="text- text-sm font-bold font-sans mb-2 flex items-center">
+            <h4 className="text-luxeWhite text-sm font-bold font-sans mb-2 flex items-center">
               <Info className="h-3 w-3 mr-1 text-amber-400" />
               Spécifications
             </h4>
@@ -71,7 +71,7 @@ const VehicleCard = ({ vehicle }: VehicleCardProps) => {
           </div>
         </div>
         
-        <button className="mt-5 bg-transparent text-amber-400 border font-sans border-amber-400/30 hover:border-amber-400 px-4 py-2 text-xs font-medium flex items-center transition-all rounded-sm hover:bg-amber-500/10 w-full justify-center">
+        <button className="mt-5 text-luxeGold bg-transparent  border font-sans border-amber-400/30 hover:border-amber-400 px-4 py-2 text-xs font-medium flex items-center transition-all rounded-sm hover:bg-luxeGold/10 w-full justify-center">
           Découvrir Plus <ChevronRight className="h-3 w-3 ml-1" />
         </button>
       </div>

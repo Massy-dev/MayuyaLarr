@@ -55,7 +55,7 @@ const VehicleShowcase = () => {
     <div id='services' className="pt-16 pb-20  bg-[#0A3B2D] mx-auto px-4 md:px-8">
       <div className="container max-w-[1300px]  mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-3xl md:text-5xl font-serif font-light mb-4 tracking-wide">
+          <h1 className="text-4xl  md:text-5xl font-serif mb-4 tracking-wide">
             Nos Modèles 
           </h1>
           <p className="text-gray-300 max-w-2xl mx-auto font-sans text-sm md:text-base leading-relaxed">
@@ -70,7 +70,7 @@ const VehicleShowcase = () => {
               onClick={() => setActiveCategory(category)}
               className={`px-4 py-2 rounded-full border ${
                 activeCategory === category
-                  ? 'bg-[#fec544] text-black'
+                  ? 'bg-luxeGold text-black'
                   : 'bg-transparent text-white border-white'
               } transition-colors duration-300`}
             >

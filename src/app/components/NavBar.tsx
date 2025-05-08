@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 import { Link } from "react-scroll";
 import { HiOutlineMenu, HiX } from 'react-icons/hi';
@@ -25,19 +26,22 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all text-white p-4 duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 transition-all text-white  duration-300 ${
         isScrolled ? "bg-[#0A2019]/90 backdrop-blur-sm" : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className={`text-2xl font-bold ${
-          isScrolled ? 'text-[#d4af37]' : 'text-white'
-        }`}>
-          Mayuya Larr Money
-        </h1>
+      <div className="max-w-7xl mx-auto px-6  flex justify-between items-center">
+      <Image 
+        src="/images/LOGOlm.png" 
+        width={120}
+        height={100}
+        alt="IMPERIAL RENT Logo" 
+        className="w-auto"
+      />
+        
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex  space-x-4">
           <NavLinks isScrolled={isScrolled} />
         </nav>
 
@@ -69,7 +73,7 @@ const NavLinks = ({ isScrolled }: { isScrolled: boolean }) => (
       to="home"
       smooth={true}
       duration={500}
-      className={`block hover:text-[#d4af37] cursor-pointer transition ${
+      className={`block hover:text-luxeGold cursor-pointer font-Inter transition ${
         isScrolled ? 'text-white' : 'text-gray-200'
       }`}
     >
@@ -80,7 +84,7 @@ const NavLinks = ({ isScrolled }: { isScrolled: boolean }) => (
       to="about"
       smooth={true}
       duration={500}
-      className={`block hover:text-[#d4af37] cursor-pointer transition ${
+      className={`block hover:text-luxeGold cursor-pointer font-Inter transition ${
         isScrolled ? 'text-white' : 'text-gray-200'
       }`}
     >
@@ -91,7 +95,7 @@ const NavLinks = ({ isScrolled }: { isScrolled: boolean }) => (
       to="services"
       smooth={true}
       duration={500}
-      className={`block hover:text-[#d4af37] cursor-pointer transition ${
+      className={`block hover:text-luxeGold cursor-pointer font-Inter transition ${
         isScrolled ? 'text-white' : 'text-gray-200'
       }`}
     >
@@ -102,7 +106,7 @@ const NavLinks = ({ isScrolled }: { isScrolled: boolean }) => (
       to="galerie"
       smooth={true}
       duration={500}
-      className={`block hover:text-[#d4af37] cursor-pointer transition ${
+      className={`block hover:text-luxeGold cursor-pointer font-Inter transition ${
         isScrolled ? 'text-white' : 'text-gray-200'
       }`}
     >
@@ -115,7 +119,7 @@ const NavLinks = ({ isScrolled }: { isScrolled: boolean }) => (
       to="contact"
       smooth={true}
       duration={500}
-      className={`block hover:text-[#d4af37] cursor-pointer transition ${
+      className={`block hover:text-luxeGold cursor-pointer font-Inter transition ${
         isScrolled ? 'text-white' : 'text-gray-200'
       }`}
     >

@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { cn } from "../lib/utils";
+import { motion } from 'framer-motion';
 
 
 function Hero() {
@@ -32,14 +33,19 @@ function Hero() {
         />
       </div>
       
-      <div className="relative z-20 h-full container  max-w-[1300px] mx-auto px-4 md:px-8 pt-2 md:pt-0">
-        <div className="flex  text-left  flex-col justify-center h-full max-w-xl">
+      <motion.div className="relative z-20 h-full container  max-w-[1300px] mx-auto px-4 md:px-8 pt-2 md:pt-0"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+        viewport={{ once: true }}
+      >
+        <div className="flex  text-left  flex-col justify-center pt-10 md:pt-10 h-full max-w-xl">
           <h1 className={cn(
             "font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-tight opacity-0 transition-all duration-1000",
             isVisible && "opacity-100 translate-y-0"
           )}>
-            <span className="block mb-2 text-[#D4AF37]">LA PUISSANCE</span>
-            <span className="block mb-2 text-[#D4AF37]">DU LUXE.</span>
+            <span className="block mb-2 text-luxeGold">LA PUISSANCE</span>
+            <span className="block mb-2 text-luxeGold">DU LUXE.</span>
             <span className="block font-light mt-4">L&apos;ESPRIT MAYUYA.</span>
           </h1>
           
@@ -54,13 +60,13 @@ function Hero() {
             "mt-8 opacity-0 transition-all duration-1000 delay-500",
             isVisible && "opacity-100 translate-y-0"
           )}>
-            <button className="bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-white transition">
+            <button className="bg-luxeGold text-black font-semibold px-8 py-3 rounded-lg hover:bg-white transition">
               DÉCOUVRIR
             </button>
             
           </div>
         </div>
-      </div>
+      </motion.div>
 
     </section>
   );
