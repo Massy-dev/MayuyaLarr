@@ -33,6 +33,8 @@ const VehicleCard = ({ vehicle }: VehicleCardProps) => {
         <div className="absolute inset-0 bg-black/20 z-10"></div>
         <Image 
           src={vehicle.imageUrl} 
+          width={100}
+          height={100}
           alt={vehicle.name} 
           className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
         />

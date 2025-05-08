@@ -26,6 +26,8 @@ function Hero() {
         <Image
           src="https://images.pexels.com/photos/3786091/pexels-photo-3786091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt="Luxury Mayuya vehicle"
+          width={100}
+          height={100}
           className="w-full h-full object-cover object-center"
         />
       </div>
