@@ -1,6 +1,6 @@
 import React from 'react';
-import { Crown, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
-import Image from 'next/image';
+import {  Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+
 
 
 
