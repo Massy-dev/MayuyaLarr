@@ -32,7 +32,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6  flex justify-between items-center">
       <Image 
-        src="/images/LOGOlm.png" 
+        src="/images/logoLM.png" 
         width={120}
         height={100}
         alt="IMPERIAL RENT Logo" 
